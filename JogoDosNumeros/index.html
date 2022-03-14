@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="app.js"></script>
+    <title>
+        Imersão Dev - Aula 03
+    </title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="page-title">
+      Mentalista
+  <div class="icon">
+    <img src="https://img.icons8.com/external-bearicons-glyph-bearicons/30/ffffff/external-question-call-to-action-bearicons-glyph-bearicons.png" data-toggle="tooltip" data-placement="top" title="Neste jogo você possui 3 chances para acertar o número escolhido pelo sistema. Teste sua sorte e se divirta!"/>
+  </div>
+    </h1>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg" class="page-logo" alt=""><br>
+    <p class="page-subtitle">
+      Digite um número de 0 a 10:
+    </p>
+    <input type="number" id="valor" /><br>
+    <button type="submit" id="chute" onclick="Chutar()">Chutar</button>
+    <!--<h2 class="resultado" id="resultado"></h2>-->
+    <div id="dialogAcerto" title="Parabéns!" style="display:none">
+      <p>Você acertou!</p>
+    </div>
+    <div id="dialogErroMaior" title="Dica" style="display:none">
+      <p>Você errou, tente novamente!</p>
+      <p> O número que está procurando é maior!</p>
+    </div>
+    <div id="dialogErroMenor" title="Dica" style="display:none">
+      <p>Você errou, tente novamente!</p>
+      <p> O número que está procurando é menor!</p>
+    </div>
+    <div id="dialogFinal" title="Você errou!" style="display:none">
+      <p id="number"></p>
+      <p>Tente acertar o próximo número!</p>
+    </div>
+  </div>
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+  </a>
+  
+</body>
+
+</html>
